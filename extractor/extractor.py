@@ -44,7 +44,7 @@ for csv in sorted(csvs, key=lambda csv: csv.name):
     title = csv.readline().strip().split(',')[0].strip()
     # perform header checks
     header = csv.readline().strip().split(',')
-    if header[3].strip().lower() != 'university of manitoba email':
+    if header[4].strip().lower() != 'preferred email':
         error(title)
         continue
     elif header[5].strip().lower() != 'are you an ieee member?':
@@ -66,14 +66,14 @@ for csv in sorted(csvs, key=lambda csv: csv.name):
         parts = [part.strip() for part in line.strip().split(',')]
         # only check flags in valid scenarios of membership flag
         if not args.membership or (args.membership and parts[5].lower() == 'yes'):
-            if not args.unique or (args.unique and parts[3] not in tot_registrations):
-                tot_registrations.add(parts[3])
+            if not args.unique or (args.unique and parts[4] not in tot_registrations):
+                tot_registrations.add(parts[4])
                 # attendance clause check done at end of each file
                 cur_attendance += 1
                 if args.comments and (comment := parts[-2]) != '':
                     print(f'> {comment}')
                 elif args.emails:
-                    print(parts[3])
+                    print(parts[4])
     # print current attendance if necessary
     if args.attendance and not args.unique:
         print(f'There were {cur_attendance} {attendee_attributes()}attendees.')
