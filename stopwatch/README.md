@@ -22,4 +22,8 @@ Another feature that may be added in the future is the ability to display the de
 
 ## Verilog Implementation
 
-The Verilog code to implement the stopwatch is can viewed [here](https://youtu.be/5ri80YKdd5E) for your viewing leisure.
+The Verilog code used to develop the stopwatch are included in this directory for your viewing leisure.
+
+## Implementation Demonstration
+
+The demonstration of the stopwatch can viewed [here](https://youtu.be/5ri80YKdd5E) for your viewing leisure.
