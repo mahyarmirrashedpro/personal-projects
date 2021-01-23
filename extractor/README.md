@@ -8,8 +8,9 @@ However, there was substantial hurdles to pulling meaningful stastistics or info
 
 Some main issues were as follows:
 * Viewing all proposed ideas for future UMIEEE workshops across all registration forms;
-* Aggregating set (no repeats) of all participants' emails for advertising to join UMIEEE in subsequent year; and
-* Calculating participant counts in each registration form to submit for future chapter funding.
+* Aggregating set (no repeats) of all participants' emails for advertising to join UMIEEE in subsequent year;
+* Calculating participant counts in each registration form to submit for future chapter funding; and
+* Filtering emails to return only email addresses for students requesting for slides.
 
 ## `extractor.py` Solution
 
@@ -19,6 +20,7 @@ Main program flags:
 * `-f` specifies the CSV files to be processed;
 * `-u` specifies results should be filtered on uniqueness (e.g. only show unique email addresses throughout all registrations); and
 * `-m` specifies results should be filtered on member-only registrants.
+* `-s` specifies results should be only for students requesting slides (only applicable to `-e` operation flag, practically).
 
 Operation flags (mutually exclusive during single program instance):
 * `-a` specifies to show attendance count;
