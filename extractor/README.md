@@ -14,7 +14,7 @@ Some main issues were as follows:
 
 ## `extractor.py` Solution
 
-By learning and incorporating the Python `argparse` library, flags for different program functions are able to be set without using complicated RegEx error checking on inputs.
+By learning and incorporating the Python `argparse` library for program flags, different functions can be applied to input data without using complicated regular expressions. This greatly reduces and simplifies the program code.
 
 Main program flags:
 * `-f` specifies the CSV files to be processed;
