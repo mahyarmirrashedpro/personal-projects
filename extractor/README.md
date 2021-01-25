@@ -29,4 +29,4 @@ Operation flags (mutually exclusive during single program instance):
 
 ## Conclusion
 
-With these program flags, `extractor.py` is able to effectively target and solve the problem at hand. Future iterations could include a graphical user interface (GUI) to make the program more accessible to users who are not familiar or proficient with command line programs.
+With these program flags, `extractor.py` is able to effectively target and solve the problem at hand. It solves the identified problems extremely well. Future iterations could include a graphical user interface (GUI) to make the program more accessible to users who are not familiar or proficient with command line programs. Additionally, some program could be implemented to automatically pull new, completed registrations forms online and into directory for processing.
