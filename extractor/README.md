@@ -14,13 +14,14 @@ Some main issues were as follows:
 
 ## `extractor.py` Solution
 
-By learning and incorporating the Python `argparse` library for program flags, different functions can be applied to input data without using complicated regular expressions. This greatly reduces and simplifies the program code.
+By learning and incorporating the Python `argparse` module for program flags and the `pandas` module for simple TSV manipulation, different functions can be applied to input data without using complicated regular expressions. This greatly reduces and simplifies the program code.
 
 Main program flags:
-* `-f` specifies the CSV files to be processed;
-* `-u` specifies results should be filtered on uniqueness (e.g. only show unique email addresses throughout all registrations); and
-* `-m` specifies results should be filtered on member-only registrants.
-* `-s` specifies results should be only for students requesting slides (only applicable to `-e` operation flag, practically).
+* `-f` specifies the TSV files to be processed;
+* `-u` specifies results should be filtered on uniqueness (e.g. only show unique email addresses throughout all registrations);
+* `-m` specifies results should be filtered on member-only registrants;
+* `-s` specifies results should be only for students requesting slides (only applicable to `-e` operation flag, practically); and
+* `-ie` specifies to ignore any table validation errors.
 
 Operation flags (mutually exclusive during single program instance):
 * `-a` specifies to show attendance count;
