@@ -117,7 +117,7 @@ for tsv in sorted(tsvs, key=lambda tsv: tsv.name):
         if not args.membership or (args.membership and row['are you an ieee member?']):
             if not args.unique or (args.unique and row['preferred email'] not in registrations):
                 registrations.add(row['preferred email'])
-                if args.comments and row['what workshops would you like to see in the future?']:
+                if args.comments and not pd.isnull(row['what workshops would you like to see in the future?']):
                     print(f"> {row['what workshops would you like to see in the future?']}")
                 elif args.emails:
                     if row['would you like a copy of the slides after the workshop?'] or not args.slides:
